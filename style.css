@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+/* Divs */
+.caixa {
+    display: flex;
+    width: 73%;
+    margin: 4% auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.caixa div {
+    padding: 5%;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* Divs elements */
+svg {
+    margin-bottom: 2em;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 1em;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 6em;
+}
+
+/* Buttons */
+button {
+    background: hsl(0, 0%, 95%);
+    border: solid 2px hsl(0, 0%, 95%);
+    padding: 1em;
+    border-radius: 22px;
+    width: 70%;
+    cursor: pointer;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+p, button {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button:hover {
+    background-color: transparent;
+}
+
+.sedans button:hover, .suvs button:hover, .luxury button:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+
+/* Footer */
+.attribution { font-size: 11px; text-align: center; border-top: 1px black solid; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Device-Width */
+
+@media screen and (max-width: 900px) {
+    .caixa {
+        flex-wrap: wrap;
+    }
+}
